@@ -1,0 +1,17 @@
+.main-nav ul {
+  @include font-sizes(16px, 32px, 300);
+  @include list-reset;
+  display: flex;
+}
+
+@media (max-width: $max-tablet-width) {
+  .main-nav ul {
+    @include font-sizes(20px, 28px, 400);
+    flex-direction: column;
+    color: $mobile-menu-color;
+  }
+
+  .main-nav li {
+    background-color: $background-color-light;
+  }
+}

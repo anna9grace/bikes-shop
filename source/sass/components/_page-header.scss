@@ -1,0 +1,132 @@
+.page-header {
+  display: grid;
+  grid-template-columns: 19.5% 1fr 1fr 19.5%;
+  grid-template-rows: min-content min-content auto;
+  max-width: 100vw;
+  min-height: 825px;
+  color: $main-color-light;
+  background: $background-color-dark url("../img/main_bg_desktop_1x.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main_bg_desktop_2x.jpg");
+  }
+}
+
+.page-header__nav {
+  @include font-sizes(16px, 32px, 300);
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  margin-bottom: 29%;
+}
+
+.page-header__logo {
+  grid-column: 2 / 3;
+}
+
+.page-header__promo {
+  grid-column: 2 / 3;
+  padding-bottom: 29%;
+}
+
+.page-header__promo h3 {
+  @include font-sizes(46px, 64px, 700);
+}
+
+.page-header__promo p {
+  @include font-sizes(20px, 32px, 300);
+}
+
+.page-header__form {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  padding-bottom: 29%;
+}
+
+.page-header__form h2 {
+  @include font-sizes(17px, 28px, 600);
+}
+
+.page-header__form input {
+  border-radius: 6px;
+  border: 1px solid $border-color-light;
+}
+
+.page-header__form input::placeholder {
+  @include font-sizes(15px, 24px, 400);
+  color: transparentize($main-color-medium, 0.5);
+}
+
+.page-header__form button {
+  @include font-sizes(15px, 21px, 600);
+  color: $main-color-dark;
+  background-color: $accent-color;
+  border-radius: 6px;
+  border: none;
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .page-header {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .page-header__logo {
+    height: 50px;
+    z-index: 1;
+  }
+
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__promo {
+    margin: -50px auto 0 auto;
+    padding: 134px 19.5% 80px 19.5%;
+    text-align: center;
+    background: $background-color-dark url("../img/main_bg_tablet_1x.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main_bg_tablet_2x.jpg");
+    }
+  }
+
+  .page-header__promo h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .page-header__promo p {
+    font-size: 18px;
+  }
+
+  .page-header__form {
+    width: 321px;
+    margin: 0 auto;
+    text-align: center;
+    color: $main-color-dark;
+  }
+
+  .page-header__form h2 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .page-header__promo {
+    background-image: url("../img/main_bg_mobile_1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main_bg_mobile_2x.jpg");
+    }
+  }
+
+  .page-header__form {
+    width: 90%;
+  }
+}

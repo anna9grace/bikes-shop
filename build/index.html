@@ -58,7 +58,7 @@
 
   <main class="page-main">
 
-    <section class="about" id="about">
+    <section class="about container" id="about">
       <h2>Несколько фактов о нас</h2>
       <ul>
         <li>Самый широкий выбор велосипедов!</li>
@@ -68,25 +68,43 @@
       </ul>
     </section>
 
-    <section class="bikes" id="bike-types">
+    <section class="bikes container" id="bike-types">
       <h2>Виды велосипедов</h2>
       <ul>
         <li>
-          <img src="img/bike_street_desktop_1x.jpg" alt="Дорожный велосипед" width="342" height="503">
+          <picture>
+            <source type="image/webp" media="(max-width:767px)" srcset="img/bike_street_mobile_1x.webp 1x, img/bike_street_mobile_2x.webp 2x">
+            <source type="image/webp" media="(max-width:1023px)" srcset="img/bike_street_tablet_1x.webp 1x, img/bike_street_tablet_2x.webp 2x">
+            <source type="image/webp" srcset="img/bike_street_desktop_1x.webp 1x, img/bike_street_desktop_2x.webp 2x">
+            <!-- 1х: 342x503px; 2x: 684x1006px -->
+            <img src="img/bike_street_desktop_1x.jpg" alt="Дорожный велосипед" width="342" height="503" srcset="img/bike_street_desktop_2x.jpg 2x">
+          </picture>
           <p>Дорожный велосипед</p>
         </li>
         <li>
-          <img src="img/bike_mount_desktop_1x.jpg" alt="Горный велосипед" width="342" height="503">
+          <picture>
+            <source type="image/webp" media="(max-width:767px)" srcset="img/bike_mount_mobile_1x.webp 1x, img/bike_mount_mobile_2x.webp 2x">
+            <source type="image/webp" media="(max-width:1023px)" srcset="img/bike_mount_tablet_1x.webp 1x, img/bike_mount_tablet_2x.webp 2x">
+            <source type="image/webp" srcset="img/bike_mount_desktop_1x.webp 1x, img/bike_mount_desktop_2x.webp 2x">
+            <!-- 1х: 342x503px; 2x: 684x1006px -->
+            <img src="img/bike_mount_desktop_1x.jpg" alt="Горный велосипед" width="342" height="503" srcset="img/bike_mount_desktop_2x.jpg 2x">
+          </picture>
           <p>Горный велосипед</p>
         </li>
         <li>
-          <img src="img/bike_kids_desktop_1x.jpg" alt="Детский велосипед" width="342" height="503">
+          <picture>
+            <source type="image/webp" media="(max-width:767px)" srcset="img/bike_kids_mobile_1x.webp 1x, img/bike_kids_mobile_2x.webp 2x">
+            <source type="image/webp" media="(max-width:1023px)" srcset="img/bike_kids_tablet_1x.webp 1x, img/bike_kids_tablet_2x.webp 2x">
+            <source type="image/webp" srcset="img/bike_kids_desktop_1x.webp 1x, img/bike_kids_desktop_2x.webp 2x">
+            <!-- 1х: 342x503px; 2x: 684x1006px -->
+            <img src="img/bike_kids_desktop_1x.jpg" alt="Детский велосипед" width="342" height="503" srcset="img/bike_kids_desktop_2x.jpg 2x">
+          </picture>
           <p>Детский велосипед</p>
         </li>
       </ul>
     </section>
 
-    <section class="video" id="video">
+    <section class="video container" id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <video poster="img/video_desktop_1x.jpg" width="929" height="522">
@@ -97,7 +115,7 @@
 
   </main>
 
-  <footer class="contacts" id="contacts">
+  <footer class="contacts container" id="contacts">
     <h2>Как нас найти?</h2>
     <div class="contacts__adress">
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
