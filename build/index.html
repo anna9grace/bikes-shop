@@ -16,9 +16,10 @@
       <a>
         <img src="img/logo.svg" width="68" height="20" alt="Логотип Moon">
       </a>
-      <button type="button" hidden="">
+      <button type="button">
         <span class="visually-hidden">Показать меню</span>
-      </button>
+        <svg width="30" height="30"><use xlink:href="img/sprite_auto.svg#icon_hamburger"></use>
+      </svg></button>
     </div>
     <nav class="page-header__nav main-nav">
       <ul>
@@ -43,14 +44,10 @@
     <section class="page-header__form form">
       <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__name-field">
-          <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
-          <input type="text" name="name" id="customer-name" placeholder="Введите Ваше Имя">
-        </p>
-        <p class="form__phone-field">
-          <label class="visually-hidden" for="customer-phone">Введите Ваш номер телефона</label>
-          <input type="tel" name="phone" id="customer-phone" placeholder="Введите Ваш номер телефона">
-        </p>
+        <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
+        <input type="text" name="name" id="customer-name" placeholder="Введите Ваше Имя">
+        <label class="visually-hidden" for="customer-phone">Введите Ваш номер телефона</label>
+        <input type="tel" name="phone" id="customer-phone" placeholder="Введите Ваш номер телефона">
         <button type="submit">Подобрать велосипед мечты</button>
       </form>
     </section>

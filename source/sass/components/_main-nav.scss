@@ -2,6 +2,24 @@
   @include font-sizes(16px, 32px, 300);
   @include list-reset;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid transparentize($main-color-light, 0.8);
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 19px 20px 12px 20px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
+
+  &:active {
+    color: transparentize($accent-color, 0.5);
+  }
 }
 
 @media (max-width: $max-tablet-width) {
