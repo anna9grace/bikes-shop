@@ -22,14 +22,30 @@
   }
 }
 
+
 @media (max-width: $max-tablet-width) {
   .main-nav ul {
-    @include font-sizes(20px, 28px, 400);
-    flex-direction: column;
-    color: $mobile-menu-color;
+    @include font-sizes(16px, 20px, 400);
+    padding-top: 13px;
+    border: none;
   }
 
-  .main-nav li {
-    background-color: $background-color-light;
+  .main-nav a {
+    padding: 10px 15px;
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .main-nav ul {
+    flex-direction: column;
+    background-color: $background-color-dark;
+  }
+
+  .main-nav a {
+    width: 100%;
+    padding: 10px 15px;
+
+    border-top: 1px solid $border-color-light;
   }
 }
