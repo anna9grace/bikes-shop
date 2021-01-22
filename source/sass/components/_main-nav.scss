@@ -37,9 +37,12 @@
 
 
 @media (max-width: $max-mobile-width) {
+  .main-nav {
+    background-color: $background-color-dark;
+  }
+
   .main-nav ul {
     flex-direction: column;
-    background-color: $background-color-dark;
   }
 
   .main-nav a {

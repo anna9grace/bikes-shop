@@ -50,19 +50,20 @@
 
 @media (max-width: $max-tablet-width) {
   .page-header {
-    background-image: none;
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     min-height: auto;
     margin-bottom: 70px;
     padding-bottom: 0;
+    background-image: none;
   }
 
   .page-header__logo {
     display: flex;
     height: 50px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .page-header__logo a {
@@ -71,10 +72,8 @@
 
   .page-header__logo button {
     @include sizes(50px, 50px);
-    display: flex;
     margin-left: auto;
     border: none;
-    background-color: $accent-color;
 
     &:hover,
     &:focus {
@@ -87,8 +86,14 @@
     }
   }
 
-  .page-header__logo svg {
-    margin: auto;
+  .page-header__menu {
+    &--open {
+      background: $accent-color url("../../img/hamburger.svg") center center no-repeat;
+    }
+
+    &--close {
+      background: $main-color-light url("../../img/close.svg") center center no-repeat;
+    }
   }
 
   .page-header__nav {

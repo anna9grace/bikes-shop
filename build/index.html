@@ -16,10 +16,9 @@
       <a>
         <img src="img/logo.svg" width="68" height="20" alt="Логотип Moon">
       </a>
-      <button type="button" style="display: none;">
+      <button type="button" class="page-header__menu page-header__menu--open hidden">
         <span class="visually-hidden">Показать меню</span>
-        <svg width="30" height="30"><use xlink:href="img/sprite_auto.svg#icon_hamburger"></use>
-      </svg></button>
+      </button>
     </div>
     <nav class="page-header__nav main-nav">
       <ul>
@@ -47,7 +46,7 @@
         <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
         <input type="text" name="name" id="customer-name" placeholder="Введите Ваше Имя" required="">
         <label class="visually-hidden" for="customer-phone">Введите Ваш номер телефона</label>
-        <input type="tel" name="phone" id="customer-phone" placeholder="Введите Ваш номер телефона" required="">
+        <input type="tel" name="phone" id="customer-phone" pattern="[\+]{0,1}[78]{1}[0-9]{10}" placeholder="Введите Ваш номер телефона" required="">
         <button type="submit">Подобрать велосипед мечты</button>
       </form>
     </section>
@@ -126,5 +125,6 @@
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
