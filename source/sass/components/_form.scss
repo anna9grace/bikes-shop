@@ -35,6 +35,7 @@
 
 .form button {
   @include font-sizes(15px, 21px, 600);
+  cursor: pointer;
   padding: 14px 30px;
   color: $main-color-dark;
   background-color: $accent-color;

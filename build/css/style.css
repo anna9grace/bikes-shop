@@ -51,17 +51,15 @@ html {
           box-sizing: inherit; }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
   margin: 0 auto; }
+  .container--contacts {
+    max-width: 957px;
+    width: 66.5%; }
 
 @media (max-width: 1023px) {
-  .container {
-    max-width: 698px; } }
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 290px; } }
+  --contacts {
+    width: 100%;
+    max-width: 100%; } }
 
 .page {
   height: 100%; }
@@ -147,6 +145,7 @@ html {
   .page-header__logo button {
     width: 50px;
     height: 50px;
+    cursor: pointer;
     margin-left: auto;
     border: none; }
     .page-header__logo button:hover, .page-header__logo button:focus {
@@ -321,6 +320,7 @@ html {
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
+  cursor: pointer;
   padding: 14px 30px;
   color: #000000;
   background-color: #0ad9c6;
@@ -350,6 +350,20 @@ html {
     width: 90%; }
   .form h2 {
     margin-bottom: 20px; } }
+
+.video button {
+  cursor: pointer; }
+
+.contacts {
+  text-align: center; }
+
+.contacts__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .mobile-menu {
   position: absolute;

@@ -1,17 +1,32 @@
 .container {
   max-width: 1170px;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
+
+  &--contacts {
+    max-width: 957px;
+    width: 66.5%;
+  }
 }
 
 @media (max-width: $max-tablet-width) {
   .container {
     max-width: 698px;
+
+    &--contacts {
+      width: 91%;
+      max-width: 100%;
+    }
   }
 }
 
 @media (max-width: $max-mobile-width) {
   .container {
     max-width: 290px;
+
+    &--contacts {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
