@@ -4,6 +4,7 @@
   grid-template-rows: min-content min-content auto;
   width: 100%;
   min-height: 825px;
+  margin-bottom: 125px;
   padding-bottom: 15%;
   color: $main-color-light;
   background: $background-color-dark url("../img/main_bg_desktop_1x.jpg") center center no-repeat;
@@ -55,7 +56,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     min-height: auto;
-    margin-bottom: 70px;
+    margin-bottom: 51px;
     padding-bottom: 0;
     background-image: none;
   }

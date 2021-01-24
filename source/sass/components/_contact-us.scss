@@ -28,6 +28,7 @@
   @include font-sizes(16px, 22px, 400);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 22px;
   margin-bottom: 73px;
   padding-right: 10px;

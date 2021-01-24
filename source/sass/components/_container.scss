@@ -7,6 +7,11 @@
     max-width: 957px;
     width: 66.5%;
   }
+
+  &--about {
+    max-width: 1224px;
+    width: 85%;
+  }
 }
 
 @media (max-width: $max-tablet-width) {
@@ -17,6 +22,11 @@
       width: 91%;
       max-width: 100%;
     }
+
+    &--about {
+      width: 80%;
+      max-width: 100%;
+    }
   }
 }
 
@@ -24,7 +34,8 @@
   .container {
     max-width: 290px;
 
-    &--contacts {
+    &--contacts,
+    &--about {
       width: 100%;
       max-width: 100%;
     }
