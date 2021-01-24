@@ -1,43 +1,53 @@
 .container {
   max-width: 1170px;
-  // width: 100%;
   margin: 0 auto;
-
-  &--contacts {
-    max-width: 957px;
-    width: 66.5%;
-  }
 
   &--about {
     max-width: 1224px;
     width: 85%;
   }
+
+  &--bikes {
+    max-width: 1210px;
+    width: 84.25%;
+  }
+
+  &--contacts {
+    max-width: 957px;
+    width: 66.5%;
+  }
 }
 
 @media (max-width: $max-tablet-width) {
   .container {
-    max-width: 698px;
+    &--about {
+      width: 80%;
+    }
+
+    &--bikes {
+      width: 83.33%;
+    }
 
     &--contacts {
       width: 91%;
-      max-width: 100%;
     }
 
-    &--about {
-      width: 80%;
-      max-width: 100%;
+    &--video {
+      max-width: 768px;
     }
   }
 }
 
 @media (max-width: $max-mobile-width) {
   .container {
-    max-width: 290px;
-
     &--contacts,
+    &--bikes,
     &--about {
       width: 100%;
-      max-width: 100%;
+    }
+
+    &--video {
+      max-width: 320px;
     }
   }
 }

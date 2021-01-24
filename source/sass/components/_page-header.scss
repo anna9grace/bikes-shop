@@ -26,6 +26,11 @@
   grid-column: 2 / 3;
 }
 
+.page-header__logo a {
+  display: inline-block;
+  width: 67.6px;
+}
+
 .page-header__promo {
   grid-column: 2 / 3;
   max-width: 380px;
