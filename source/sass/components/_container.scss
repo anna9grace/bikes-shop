@@ -12,6 +12,11 @@
     width: 84.25%;
   }
 
+  &--video {
+    max-width: 929px;
+    width: 65.5%;
+  }
+
   &--contacts {
     max-width: 957px;
     width: 66.5%;
@@ -31,10 +36,6 @@
     &--contacts {
       width: 91%;
     }
-
-    &--video {
-      max-width: 768px;
-    }
   }
 }
 
@@ -47,7 +48,7 @@
     }
 
     &--video {
-      max-width: 320px;
+      width: 90%;
     }
   }
 }

@@ -24,6 +24,12 @@
   background-image: url("../../img/map_desktop_1x.jpg");
 }
 
+.contact-us iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .contact-us__contacts {
   @include font-sizes(16px, 22px, 400);
   display: flex;

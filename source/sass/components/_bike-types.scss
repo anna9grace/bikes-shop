@@ -89,6 +89,10 @@
 
 
 @media (max-width: $max-tablet-width) {
+  .bikes-types {
+    padding-bottom: 18px;
+  }
+
   .bikes-types h2 {
     padding: 49px 0 31px 0;
     font-size: 24px;

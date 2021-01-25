@@ -1,3 +1,119 @@
+.video {
+  padding-top: 92px;
+  margin-bottom: 127px;
+  background: linear-gradient($background-color-dark 87%, $main-color-light 13%);
+  color: $main-color-light;
+  text-align: center;
+}
+
+.video h2 {
+  @include font-sizes(30px, 30px, 600);
+  margin-bottom: 21px;
+  margin-right: 10px;
+}
+
+.video p {
+  @include font-sizes(16px, 28px, 300);
+  width: 340px;
+  margin: 0 auto 56px auto;
+  color: transparentize($main-color-light, 0.3);
+}
+
+.video div {
+  position: relative;
+}
+
+.video img {
+  display: block;
+  height: 56.19%;
+}
+
 .video button {
+  @include sizes(65px, 65px);
   cursor: pointer;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: none;
+  border-radius: 50%;
+  background-color: $accent-color;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    border: 9px solid transparent;
+    border-left: 14px solid $main-color-medium;
+    margin: auto auto auto 20px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten(invert($accent-color, 10%), 30%);
+    outline: none;
+  }
+
+  &:active {
+    background-color: transparentize($accent-color, 0.5);
+  }
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .video {
+    padding-top: 50px;
+    margin-bottom: 49px;
+    background: linear-gradient($background-color-dark 83%, $main-color-light 17%);
+  }
+
+  .video h2 {
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .video p {
+    width: 480px;
+    margin-bottom: 39px;
+  }
+
+  .video button {
+    @include sizes(90px, 90px);
+
+    &::after {
+      border-width: 13px;
+      border-left-width: 20px;
+      margin-left: 29px;
+    }
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .video {
+    padding-top: 62px;
+    margin-bottom: 53px;
+    background: linear-gradient($background-color-dark 89%, $main-color-light 11%);
+  }
+
+  .video h2 {
+    margin-left: -13px;
+  }
+
+  .video p {
+    width: 100%;
+    margin-bottom: 53px;
+  }
+
+  .video button {
+    @include sizes(65px, 65px);
+
+    &::after {
+      border-width: 9px;
+      border-left-width: 14px;
+      margin-left: 20px;
+    }
+  }
 }
