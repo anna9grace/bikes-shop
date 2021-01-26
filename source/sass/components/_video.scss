@@ -32,6 +32,8 @@
   @include sizes(65px, 65px);
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -45,7 +47,7 @@
 
   &::after {
     content: "";
-    margin: auto auto auto 20px;
+    margin: 0 0 0 15px;
     border: 9px solid transparent;
     border-left: 14px solid $main-color-medium;
   }
@@ -83,7 +85,7 @@
     @include sizes(90px, 90px);
 
     &::after {
-      margin-left: 29px;
+      margin-left: 21px;
       border-width: 13px;
       border-left-width: 20px;
     }
@@ -111,7 +113,7 @@
     @include sizes(65px, 65px);
 
     &::after {
-      margin-left: 20px;
+      margin-left: 15px;
       border-width: 9px;
       border-left-width: 14px;
     }

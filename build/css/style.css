@@ -128,7 +128,7 @@ html {
   font-size: 46px;
   line-height: 64px;
   font-weight: 700;
-  margin-top: 22px;
+  margin-top: 27px;
   margin-bottom: 25px; }
 
 .page-header__promo p {
@@ -188,7 +188,7 @@ html {
   .page-header__promo {
     max-width: 100%;
     margin-top: -50px;
-    padding: 110px 19.5% 59px;
+    padding: 106px 19.5% 59px;
     text-align: center;
     background: #131314 url("../img/main_bg_tablet_1x.jpg") no-repeat;
     background-size: cover; } }
@@ -216,7 +216,7 @@ html {
     height: min-content;
     margin: 0; }
   .page-header__promo {
-    padding: 98px 2% 52px;
+    padding: 94px 2% 52px;
     background-image: url("../img/main_bg_mobile_1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .page-header__promo {
@@ -297,8 +297,8 @@ html {
 
 .form input {
   height: 48px;
-  margin-bottom: 20px;
-  padding: 11px 31px;
+  margin-bottom: 21px;
+  padding: 14px 31px 11px;
   border-radius: 6px;
   border: 1px solid #c9ccd4; }
   .form input:hover, .form input:focus {
@@ -365,7 +365,7 @@ html {
     color: #000000; }
   .form h2 {
     margin-top: 69px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     font-size: 18px; }
   .form input {
     padding: 11px 25px; } }
@@ -373,6 +373,8 @@ html {
 @media (max-width: 767px) {
   .form form {
     width: 90%; }
+  .form input {
+    margin-bottom: 20px; }
   .form h2 {
     margin-bottom: 20px; } }
 
@@ -414,7 +416,8 @@ html {
           flex-direction: column;
   -ms-flex-preferred-size: 263px;
       flex-basis: 263px;
-  margin: 0 18px 38px 18px; }
+  margin: 0 16px 38px 16px;
+  letter-spacing: -0.5px; }
   .about li::before {
     font-size: 28px;
     line-height: 34px;
@@ -537,7 +540,7 @@ html {
     font-size: 24px;
     line-height: 41px; }
   .bikes-types p {
-    margin-top: 14px; }
+    margin-top: 15px; }
   .bikes-types img {
     height: 300px;
     border-radius: 8px;
@@ -567,7 +570,9 @@ html {
 
 @media (max-width: 767px) {
   .bikes-types {
-    padding-bottom: 14px; }
+    padding-bottom: 12px; }
+  .bikes-types p {
+    margin-top: 16px; }
   .bikes-types li {
     width: 100%;
     max-width: 450px;
@@ -578,10 +583,10 @@ html {
       right: -14px; } }
 
 .video {
-  margin-bottom: 127px;
-  padding-top: 92px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(87%, #131314), color-stop(13%, #ffffff));
-  background: linear-gradient(#131314 87%, #ffffff 13%);
+  margin-bottom: 126px;
+  padding-top: 95px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(87.5%, #131314), color-stop(12.5%, #ffffff));
+  background: linear-gradient(#131314 87.5%, #ffffff 12.5%);
   color: #ffffff;
   text-align: center; }
 
@@ -637,7 +642,7 @@ html {
 
 @media (max-width: 1023px) {
   .video {
-    margin-bottom: 49px;
+    margin-bottom: 54px;
     padding-top: 50px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(83%, #131314), color-stop(17%, #ffffff));
     background: linear-gradient(#131314 83%, #ffffff 17%); }
@@ -725,7 +730,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 46px;
+  margin: 14px 46px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -746,6 +751,7 @@ html {
     padding-right: 0; }
   .contact-us__adress div {
     height: 545px;
+    margin-bottom: 2px;
     background-image: url("../../img/map_tablet_1x.jpg"); }
   .contact-us__contacts {
     margin-top: 0;
