@@ -5,7 +5,7 @@
   const menuToggle = document.querySelector(`.page-header__menu`);
   const logo = document.querySelector(`.page-header__logo a`);
   const smallScreen = window.matchMedia(`(max-width: 1023px)`);
-  const mobile = window.matchMedia(`(max-width: 767px)`);
+  const mobileScreen = window.matchMedia(`(max-width: 767px)`);
   let isMenuOpened = false;
 
   if (!menu || !menuToggle) {
@@ -42,7 +42,7 @@
 
 
   const changeLogoVisibility = () => {
-    if (isMenuOpened && mobile.matches) {
+    if (isMenuOpened && mobileScreen.matches) {
       logo.classList.add(`visually-hidden`);
     } else {
       logo.classList.remove(`visually-hidden`);
@@ -51,13 +51,16 @@
 
   if (logo) {
     changeLogoVisibility();
-    mobile.addEventListener(`change`, () => {
+    mobileScreen.addEventListener(`change`, () => {
       changeLogoVisibility();
     });
   }
 
 
   const changeMenuOpenState = () => {
+    if (!menu.classList.contains(`mobile-menu`)) {
+      return;
+    }
     menu.classList.toggle(`hidden`);
     menuToggle.classList.toggle(`page-header__menu--open`);
     menuToggle.classList.toggle(`page-header__menu--close`);

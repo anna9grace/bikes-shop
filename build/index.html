@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Магазин велосипедов Moon, широкий выбор велосипедов и аксессуаров с доставкой по России">
   <title>Магазин велосипедов Moon</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/opensans_regular.woff2" as="font">
 </head>
 
 <body>
@@ -107,12 +109,18 @@
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div>
-          <img src="img/video_desktop_1x.jpg">
+          <picture>
+            <source type="image/webp" media="(max-width:767px)" srcset="img/video_mobile_1x.webp 1x, img/video_mobile_2x.webp 2x">
+            <source type="image/webp" media="(max-width:1023px)" srcset="img/video_tablet_1x.webp 1x, img/video_tablet_2x.webp 2x">
+            <source type="image/webp" srcset="img/video_desktop_1x.webp 1x, img/video_desktop_2x.webp 2x">
+            <!-- 1х: 929x522px; 2x: 1858x1044px -->
+            <img src="img/video_desktop_1x.jpg" alt="Заставка видео о велосипедах" width="929" height="522" srcset="img/video_desktop_2x.jpg 2x">
+          </picture>
           <button type="button"><span class="visually-hidden">Смотреть видео</span></button>
         </div>
       </div>
     </section>
-    <!-- width="929" height="522" -->
+
   </main>
 
   <footer class="contact-us container container--contacts" id="contacts">
@@ -121,7 +129,6 @@
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5858949859517!2d30.315340094809624!3d59.93901335585397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1597252043859!5m2!1sru!2sru" tabindex="-1"></iframe>
-        <!-- <img src="img/map_desktop_1x.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530"> -->
       </div>
     </div>
     <div class="contact-us__contacts">

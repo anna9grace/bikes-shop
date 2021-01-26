@@ -1,6 +1,6 @@
 .main-nav ul {
   @include font-sizes(16px, 32px, 300);
-  @include list-reset;
+  @include list-reset();
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -9,7 +9,8 @@
 
 .main-nav a {
   display: inline-block;
-  padding: 19px 20px 12px 20px;
+  padding: 21px 20px 9px 20px;
+  vertical-align: middle;
 
   &:hover,
   &:focus {
@@ -48,7 +49,6 @@
   .main-nav a {
     width: 100%;
     padding: 10px 15px;
-
     border-top: 1px solid $border-color-light;
   }
 }

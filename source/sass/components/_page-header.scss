@@ -29,6 +29,7 @@
 .page-header__logo a {
   display: inline-block;
   width: 67.6px;
+  vertical-align: middle;
 }
 
 .page-header__promo {
@@ -38,7 +39,7 @@
 
 .page-header__promo h1 {
   @include font-sizes(46px, 64px, 700);
-  margin-top: 22px;
+  margin-top: 27px;
   margin-bottom: 25px;
 }
 
@@ -78,9 +79,9 @@
 
   .page-header__logo button {
     @include sizes(50px, 50px);
-    cursor: pointer;
     margin-left: auto;
     border: none;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -112,7 +113,7 @@
   .page-header__promo {
     max-width: 100%;
     margin-top: -50px;
-    padding: 110px 19.5% 59px;
+    padding: 106px 19.5% 59px;
     text-align: center;
     background: $background-color-dark url("../img/main_bg_tablet_1x.jpg") no-repeat;
     background-size: cover;
@@ -132,9 +133,9 @@
   }
 
   .page-header__form {
-    background-color: $main-color-light;
     max-width: 100%;
     margin-left: 0;
+    background-color: $main-color-light;
   }
 }
 
@@ -150,7 +151,7 @@
   }
 
   .page-header__promo {
-    padding: 98px 2% 52px;
+    padding: 94px 2% 52px;
     background-image: url("../img/main_bg_mobile_1x.jpg");
 
     @media (min-resolution: 2dppx) {

@@ -1,7 +1,7 @@
 @mixin list-reset {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 @mixin font-sizes($fsize: 16px, $lheight: 28px, $fweight: 400) {

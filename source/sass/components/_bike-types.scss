@@ -6,17 +6,17 @@
 
 .bikes-types h2 {
   @include font-sizes(30px, 30px, 600);
-  padding: 148px 0 53px 0;
   margin: 0;
+  padding: 148px 0 53px 0;
   color: $main-color-medium;
 }
 
 .bikes-types p {
   @include font-sizes(22px, 34px, 600);
   position: relative;
-  z-index: 2;
   margin-top: 17px;
   letter-spacing: -0.5px;
+  z-index: 2;
 }
 
 .bikes-types ul {
@@ -45,8 +45,8 @@
       position: absolute;
       top: 23%;
       left: -67px;
-      border-radius: 50%;
       border: 27px solid $accent-color;
+      border-radius: 50%;
     }
   }
 
@@ -100,7 +100,7 @@
   }
 
   .bikes-types p {
-    margin-top: 14px;
+    margin-top: 15px;
   }
 
   .bikes-types img {
@@ -147,7 +147,11 @@
 
 @media (max-width: $max-mobile-width) {
   .bikes-types {
-    padding-bottom: 14px;
+    padding-bottom: 12px;
+  }
+
+  .bikes-types p {
+    margin-top: 16px;
   }
 
   .bikes-types li {

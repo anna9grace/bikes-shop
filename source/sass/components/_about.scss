@@ -22,7 +22,8 @@
   display: flex;
   flex-direction: column;
   flex-basis: 263px;
-  margin: 0 18px 38px 18px;
+  margin: 0 16px 38px 16px;
+  letter-spacing: -0.5px;
 
   &::before {
     @include font-sizes(28px, 34px, 700);
@@ -59,8 +60,8 @@
   }
 
   .about ul {
-    font-size: 18px;
     justify-content: center;
+    font-size: 18px;
   }
 
   .about li {

@@ -18,8 +18,8 @@
   a {
     display: flex;
     justify-content: space-between;
-    padding: 17px 27px 17px 16px;
     margin-top: 28px;
+    padding: 17px 27px 17px 16px;
     align-items: center;
     color: $mobile-menu-color;
     background-color: $background-color-light;
@@ -38,6 +38,7 @@
     }
   }
 }
+
 
 @media (max-width: $max-mobile-width) {
   .mobile-menu {
