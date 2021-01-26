@@ -96,11 +96,11 @@
 
   .page-header__menu {
     &--open {
-      background: $accent-color url("../../img/hamburger.svg") center center no-repeat;
+      background: $accent-color url("../img/hamburger.svg") center center no-repeat;
     }
 
     &--close {
-      background: $main-color-light url("../../img/close.svg") center center no-repeat;
+      background: $main-color-light url("../img/close.svg") center center no-repeat;
     }
   }
 
