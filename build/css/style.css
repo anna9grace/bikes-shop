@@ -178,9 +178,9 @@ html {
     .page-header__logo button:active {
       background-color: rgba(10, 217, 198, 0.5); }
   .page-header__menu--open {
-    background: #0ad9c6 url("../../img/hamburger.svg") center center no-repeat; }
+    background: #0ad9c6 url("../img/hamburger.svg") center center no-repeat; }
   .page-header__menu--close {
-    background: #ffffff url("../../img/close.svg") center center no-repeat; }
+    background: #ffffff url("../img/close.svg") center center no-repeat; }
   .page-header__nav {
     height: 50px;
     margin: -50px 0 0 95px;
@@ -416,7 +416,7 @@ html {
           flex-direction: column;
   -ms-flex-preferred-size: 263px;
       flex-basis: 263px;
-  margin: 0 16px 38px 16px;
+  margin: 0 19px 38px 19px;
   letter-spacing: -0.5px; }
   .about li::before {
     font-size: 28px;
@@ -436,7 +436,7 @@ html {
   .about ul {
     margin-top: 31px; }
   .about li {
-    margin-bottom: 44px; } }
+    margin: 0 16px 44px 16px; } }
 
 @media (max-width: 767px) {
   .about {
@@ -619,6 +619,12 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -631,7 +637,7 @@ html {
   cursor: pointer; }
   .video button::after {
     content: "";
-    margin: auto auto auto 20px;
+    margin: 0 0 0 15px;
     border: 9px solid transparent;
     border-left: 14px solid #1c1c1c; }
   .video button:hover, .video button:focus {
@@ -642,7 +648,7 @@ html {
 
 @media (max-width: 1023px) {
   .video {
-    margin-bottom: 54px;
+    margin-bottom: 49px;
     padding-top: 50px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(83%, #131314), color-stop(17%, #ffffff));
     background: linear-gradient(#131314 83%, #ffffff 17%); }
@@ -656,7 +662,7 @@ html {
     width: 90px;
     height: 90px; }
     .video button::after {
-      margin-left: 29px;
+      margin-left: 21px;
       border-width: 13px;
       border-left-width: 20px; } }
 
@@ -675,7 +681,7 @@ html {
     width: 65px;
     height: 65px; }
     .video button::after {
-      margin-left: 20px;
+      margin-left: 15px;
       border-width: 9px;
       border-left-width: 14px; } }
 
@@ -702,7 +708,7 @@ html {
 
 .contact-us__adress div {
   height: 530px;
-  background-image: url("../../img/map_desktop_1x.jpg"); }
+  background-image: url("../img/map_desktop_1x.jpg"); }
 
 .contact-us iframe {
   width: 100%;
@@ -752,7 +758,7 @@ html {
   .contact-us__adress div {
     height: 545px;
     margin-bottom: 2px;
-    background-image: url("../../img/map_tablet_1x.jpg"); }
+    background-image: url("../img/map_tablet_1x.jpg"); }
   .contact-us__contacts {
     margin-top: 0;
     margin-bottom: 37px; } }
@@ -764,7 +770,7 @@ html {
     margin: 22px 26px 18px 26px; }
   .contact-us__adress div {
     height: 250px;
-    background-image: url("../../img/map_mobile_1x.jpg"); }
+    background-image: url("../img/map_mobile_1x.jpg"); }
   .contact-us__contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

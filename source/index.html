@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans_regular.woff2" as="font">
+  <link rel="preload" href="fonts/opensans_bold.woff2" as="font">
 </head>
 
 <body>
@@ -72,10 +73,13 @@
         <ul>
           <li>
             <picture>
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:767px)"
                 srcset="img/bike_street_mobile_1x.webp 1x, img/bike_street_mobile_2x.webp 2x">
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:1023px)"
                 srcset="img/bike_street_tablet_1x.webp 1x, img/bike_street_tablet_2x.webp 2x">
+              <!-- 1х: 342x503px; 2x: 684x1006px -->
               <source type="image/webp"
                 srcset="img/bike_street_desktop_1x.webp 1x, img/bike_street_desktop_2x.webp 2x">
               <!-- 1х: 342x503px; 2x: 684x1006px -->
@@ -86,28 +90,34 @@
           </li>
           <li>
             <picture>
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:767px)"
                 srcset="img/bike_mount_mobile_1x.webp 1x, img/bike_mount_mobile_2x.webp 2x">
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:1023px)"
                 srcset="img/bike_mount_tablet_1x.webp 1x, img/bike_mount_tablet_2x.webp 2x">
+              <!-- 1х: 342x566px; 2x: 684x1132px -->
               <source type="image/webp"
                 srcset="img/bike_mount_desktop_1x.webp 1x, img/bike_mount_desktop_2x.webp 2x">
-              <!-- 1х: 342x503px; 2x: 684x1006px -->
-              <img src="img/bike_mount_desktop_1x.jpg" alt="Горный велосипед" width="342" height="503"
+              <!-- 1х: 342x566px; 2x: 684x1132px -->
+              <img src="img/bike_mount_desktop_1x.jpg" alt="Горный велосипед" width="342" height="566"
                 srcset="img/bike_mount_desktop_2x.jpg 2x">
             </picture>
             <p>Горный велосипед</p>
           </li>
           <li>
             <picture>
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:767px)"
                 srcset="img/bike_kids_mobile_1x.webp 1x, img/bike_kids_mobile_2x.webp 2x">
+              <!-- 1х: 270x300px; 2x: 540x600px -->
               <source type="image/webp" media="(max-width:1023px)"
                 srcset="img/bike_kids_tablet_1x.webp 1x, img/bike_kids_tablet_2x.webp 2x">
+              <!-- 1х: 342x513px; 2x: 684x1026px -->
               <source type="image/webp"
                 srcset="img/bike_kids_desktop_1x.webp 1x, img/bike_kids_desktop_2x.webp 2x">
-              <!-- 1х: 342x503px; 2x: 684x1006px -->
-              <img src="img/bike_kids_desktop_1x.jpg" alt="Детский велосипед" width="342" height="503"
+              <!-- 1х: 342x513px; 2x: 684x1026px -->
+              <img src="img/bike_kids_desktop_1x.jpg" alt="Детский велосипед" width="342" height="513"
                 srcset="img/bike_kids_desktop_2x.jpg 2x">
             </picture>
             <p>Детский велосипед</p>
@@ -122,10 +132,13 @@
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div>
           <picture>
+            <!-- 1х: 929x522px; 2x: 1858x1044px -->
             <source type="image/webp" media="(max-width:767px)"
               srcset="img/video_mobile_1x.webp 1x, img/video_mobile_2x.webp 2x">
+            <!-- 1х: 503x282px; 2x: 1006x564px -->
             <source type="image/webp" media="(max-width:1023px)"
               srcset="img/video_tablet_1x.webp 1x, img/video_tablet_2x.webp 2x">
+            <!-- 1х: 929x522px; 2x: 1858x1044px -->
             <source type="image/webp"
               srcset="img/video_desktop_1x.webp 1x, img/video_desktop_2x.webp 2x">
             <!-- 1х: 929x522px; 2x: 1858x1044px -->
@@ -149,11 +162,11 @@
     </div>
     <div class="contact-us__contacts">
       <a href="mailto:puteshestviemechta@gmail.ru">
-        <svg width="40" height="20"><use xlink:href="./img/sprite_auto.svg#icon_mail"></use></svg>
+        <svg width="40" height="20"><use xlink:href="img/sprite_auto.svg#icon_mail"></use></svg>
         puteshestviemechta@gmail.ru
       </a>
       <a href="tel:849978468446">
-        <svg width="40" height="30"><use xlink:href="./img/sprite_auto.svg#icon_phone"></use></svg>
+        <svg width="40" height="30"><use xlink:href="img/sprite_auto.svg#icon_phone"></use></svg>
         +7 (499) -784-684-46
       </a>
     </div>
