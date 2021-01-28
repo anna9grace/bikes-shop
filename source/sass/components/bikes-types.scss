@@ -104,14 +104,14 @@
   }
 
   .bikes-types img {
-    height: 300px;
+    height: 39vw;
     border-radius: 8px;
     object-fit: cover;
   }
 
   .bikes-types li {
-    width: 42.2%;
-    margin: 0 3.9% 30px 3.9%;
+    width: 35.03vw;
+    margin: 0 25px 30px 25px;
 
     &:nth-of-type(3n+1) {
       margin-top: 0;
@@ -156,7 +156,6 @@
 
   .bikes-types li {
     width: 100%;
-    max-width: 450px;
     margin: 0 8% 21px 8%;
 
     &:nth-of-type(3n+1) {
@@ -170,5 +169,9 @@
         right: -14px;
       }
     }
+  }
+
+  .bikes-types img {
+    height: 93.8vw;
   }
 }
