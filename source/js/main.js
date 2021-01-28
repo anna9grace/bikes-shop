@@ -1,9 +1,10 @@
 'use strict';
 
 (function () {
-  const menu = document.querySelector(`.main-nav`);
-  const menuToggle = document.querySelector(`.page-header__menu`);
-  const logo = document.querySelector(`.page-header__logo a`);
+  const page = document.querySelector(`.page`);
+  const menu = page.querySelector(`.main-nav`);
+  const menuToggle = page.querySelector(`.page-header__menu`);
+  const logo = page.querySelector(`.page-header__logo`);
   const smallScreen = window.matchMedia(`(max-width: 1023px)`);
   const mobileScreen = window.matchMedia(`(max-width: 767px)`);
   let isMenuOpened = false;
@@ -42,20 +43,28 @@
 
 
   const changeLogoVisibility = () => {
-    if (isMenuOpened && mobileScreen.matches) {
-      logo.classList.add(`visually-hidden`);
-    } else {
-      logo.classList.remove(`visually-hidden`);
+    if (logo) {
+      if (isMenuOpened && mobileScreen.matches) {
+        logo.classList.add(`page-header__logo--hidden`);
+      } else {
+        logo.classList.remove(`page-header__logo--hidden`);
+      }
     }
   };
 
-  if (logo) {
-    changeLogoVisibility();
-    mobileScreen.addEventListener(`change`, () => {
-      changeLogoVisibility();
-    });
-  }
+  const changePageState = () => {
+    if (isMenuOpened && mobileScreen.matches) {
+      page.classList.add(`page--inactive`);
+    } else {
+      page.classList.remove(`page--inactive`);
+    }
+  };
 
+  changeLogoVisibility();
+  mobileScreen.addEventListener(`change`, () => {
+    changeLogoVisibility();
+    changePageState();
+  });
 
   const changeMenuOpenState = () => {
     if (!menu.classList.contains(`mobile-menu`)) {
@@ -65,17 +74,14 @@
     menuToggle.classList.toggle(`page-header__menu--open`);
     menuToggle.classList.toggle(`page-header__menu--close`);
     isMenuOpened = menuToggle.classList.contains(`page-header__menu--close`) ? true : false;
-
-    if (logo) {
-      changeLogoVisibility();
-    }
+    changeLogoVisibility();
+    changePageState();
   };
 
   menuToggle.addEventListener(`click`, (evt) => {
     evt.preventDefault();
     changeMenuOpenState();
-  }
-  );
+  });
 
   menu.addEventListener(`click`, (evt) => {
     if (evt.target.tagName !== `A`) {

@@ -145,6 +145,14 @@
     margin-left: 18px;
   }
 
+  .page-header__logo--hidden {
+    background-color: $main-color-light;
+  }
+
+  .page-header__logo--hidden a {
+    display: none;
+  }
+
   .page-header__nav {
     height: min-content;
     margin: 0;
