@@ -41,6 +41,10 @@
   color: transparentize($main-color-dark, 0.5);
 }
 
+.contact-us__contacts svg {
+  color: #0ad9c6;
+}
+
 .contact-us__contacts a {
   display: flex;
   margin: 14px 46px;
